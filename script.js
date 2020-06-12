@@ -57,15 +57,14 @@ function generatePassword() {
     do {
     var passLength = prompt("How many digits long would you like your password to be? *Note: must be between 8 and 128");
       var charNums = parseInt(passLength); 
-        // if (charNums>=8 && charNums<=128) {
-            // console.log(passLength);
+   
         }
-    // }
-        while (charNums<8 || charNums>128)
-            // alert ("Please re-enter valid criteria"));
-        // }
+    
+        while (charNums<8 || charNums>128);
+
+        //need to control for when user hits cancel button instead of entering input 
       
-      
+    do {  
     var useUpper = confirm("Would you like to use Upper Case letters?");
         if (useUpper) {
             fullArray=fullArray.concat(upperCase);           
@@ -89,7 +88,10 @@ function generatePassword() {
             fullArray = fullArray.concat(numbers);          
             console.log(fullArray);
         }
-
+    }
+        while (useUpper!==true && useUpper!==true && useSpecial!==true && useNumbers!==true);  
+ 
+        
     var newPassword = "";
 
         for (var i =0; i < passLength; i++) {

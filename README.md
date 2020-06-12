@@ -4,3 +4,4 @@ In this project we created a site on which we prompted users for a set of criter
 
 ![page screenshot](readme images\passwordgenfinal.png)
 
+https://arielbs1991.github.io/password-generator-homework/
